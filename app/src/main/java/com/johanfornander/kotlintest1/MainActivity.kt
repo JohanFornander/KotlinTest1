@@ -21,14 +21,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val listView = findViewById<ListView>(R.id.main_listView)
-        //val redColor = Color.parseColor("#FF0000")
-        //listView.setBackgroundColor(redColor)
+        initListView()
+        getFirebaseDeviceToken()
+    }
 
+    private fun initListView() {
+        val listView = findViewById<ListView>(R.id.main_listView)
         listView.adapter = CustomAdapter(this)
 
-
-        getFirebaseDeviceToken()
+        listView.setBackgroundColor(Color.WHITE)
     }
 
 
@@ -83,8 +84,6 @@ class MainActivity : AppCompatActivity() {
             //return textView
         }
 
-
     }
-
 
 }

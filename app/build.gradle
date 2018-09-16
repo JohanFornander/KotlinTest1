@@ -7,7 +7,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.johanfornander.kotlintest1"
-        minSdkVersion 18
+        minSdkVersion 24
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
